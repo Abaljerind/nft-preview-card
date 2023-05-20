@@ -13,11 +13,19 @@ section {
 }
 
 section .card {
-  box-sizing: border-box;
   background-color: hsl(216, 50%, 16%);
   color: white;
 }
 
-ul.list-group {
-  background-color: hsl(216, 50%, 16%);
+.card .row .eth-value {
+  margin-top: 1px;
+  margin-left: -8px;
+}
+
+.card .row .days-left {
+  margin-top: 1px;
+}
+
+.card .borders {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
