@@ -18,6 +18,30 @@ section .card {
   padding: 20px;
 }
 
+section .card .img-container {
+  position: relative;
+}
+
+/* membuat gambar svg menjadi tidak terlihat dan berada ditengah tengah gambar yang sebenarnya. Perlu container / parent untuk lakukan ini yang diberi position relative seperti diatas agar gambar svg dan background-colornya sendiri bisa muncul saat dihover / active dengan property z-index */
+section .card .img-container .img-see-eth {
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 10;
+  background-color: hsla(178, 100%, 50%, 0.6);
+  opacity: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+}
+/* aspect-ratio: 1; artinya otomatis disesuaikan antara tinggi / lebarnya, karna yang diatas hanya ada lebar 100% maka tingginya juga akan mengikuti 100% dengan aspect-ratio tersebut, yang menyebabkan kita hanya perlu mengganti elemen width / lebarnya saja. dengan aspect-ratio 1 juga berarti perbandingan lebar dan tinggi nya 1:1 sehingga akan terbentuk persegi. */
+
+section .card .img-container .img-see-eth:hover,
+section .card .img-container .img-see-eth:active {
+  opacity: 1;
+  cursor: pointer;
+}
+
 section .card .cards-title h5 {
   font-weight: 600;
   color: hsl(0, 0%, 100%);
