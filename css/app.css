@@ -1,4 +1,12 @@
 html,
 body {
   font-family: "Outfit", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+/* height & margin diatas dan height di section bawah, bisa membuat elemen berada ditengah tengah halaman */
+
+/* section */
+section {
+  height: 100%;
 }
