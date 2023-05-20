@@ -12,23 +12,38 @@ section {
   height: 100%;
 }
 
+/* card */
 section .card {
   background-color: hsl(216, 50%, 16%);
-  color: white;
   padding: 20px;
+}
+
+section .card .cards-title h5 {
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+section .card .cards-title p {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
 }
 
 .card .row .eth-value {
   margin-top: 1px;
   margin-left: -8px;
+  font-weight: 400;
+  color: hsl(178, 100%, 50%);
 }
 
-.card .row .days-left {
+.card .row .days-left p {
   margin-top: 1px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
 }
 
 .card .borders {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid hsl(215, 32%, 27%);
 }
 
 .cards-footer img.card-thumbnail {
@@ -38,4 +53,9 @@ section .card {
 
 .cards-footer p.creator {
   margin-top: 5px;
+  color: hsl(0, 0%, 100%);
+}
+
+.cards-footer p span {
+  color: hsl(215, 51%, 70%);
 }
