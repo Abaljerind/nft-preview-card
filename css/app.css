@@ -23,6 +23,12 @@ section .card .cards-title h5 {
   color: hsl(0, 0%, 100%);
 }
 
+section .card .cards-title h5:active,
+section .card .cards-title h5:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
 section .card .cards-title p {
   font-weight: 300;
   color: hsl(215, 51%, 70%);
