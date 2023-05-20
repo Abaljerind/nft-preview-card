@@ -59,9 +59,15 @@ section .card .cards-title p {
 
 .cards-footer p.creator {
   margin-top: 5px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(215, 51%, 70%);
 }
 
 .cards-footer p span {
-  color: hsl(215, 51%, 70%);
+  color: hsl(0, 0%, 100%);
+}
+
+.cards-footer p span:active,
+.cards-footer p span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
