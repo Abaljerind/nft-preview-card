@@ -1,6 +1,7 @@
 html,
 body {
   font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
   height: 100%;
   margin: 0;
 }
@@ -9,4 +10,14 @@ body {
 /* section */
 section {
   height: 100%;
+}
+
+section .card {
+  box-sizing: border-box;
+  background-color: hsl(216, 50%, 16%);
+  color: white;
+}
+
+ul.list-group {
+  background-color: hsl(216, 50%, 16%);
 }
